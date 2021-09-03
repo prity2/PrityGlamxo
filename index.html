@@ -137,15 +137,24 @@
         }
 
         .search-box {
+
             position: absolute;
             top: 25%;
             left: 50%;
             transform: translate(-50%, -50%);
 
-
             border-radius: 200px;
             padding: 30px;
 
+
+        }
+
+        .input-text {
+            padding: 2px 100px;
+            height: 40px;
+            border: 2px solid white;
+            border-radius: 30px;
+            outline: none;
         }
 
         .fa-envelope-o {
@@ -156,7 +165,8 @@
             color: crimson;
         }
 
-        @media (max-width: 991px) {
+        @media (max-width: 991px)
+         {
             .header 
             {
                 padding: 20px;
@@ -164,22 +174,20 @@
             }
 
             .main .logo
-            {
+             {
                 flex-direction: column;
             }
 
-            .container .contactInfo 
-            {
+            .container .contactInfo {
                 margin-bottom: 40px;
 
             }
 
             .container .contactInfo,
             .contactForm {
-
-
                 width: 100%;
             }
+        }
     </style>
 </head>
 
@@ -191,13 +199,12 @@
                 <img src="abs.png">
             </div>
             <div class="search-box">
-                <input type="text" class="input-text">
-                <input type="button" value="search">
+                <input type="text" placeholder="what are you looking for" class="input-text">
                 <a class="search.btn" href="#"></a>
             </div>
             <ul>
-                <li class="active"> <a href="#">Home</a></li>
-                <li> <a href="#">About Us</a></li>
+
+                <li> <a href="aboutUs.html">About Us</a></li>
                 <li> <a href="gallery.html">Gallery</a></li>
                 <li> <a href="contact.html">Contact</a></li>
 
